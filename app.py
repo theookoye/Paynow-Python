@@ -20,7 +20,7 @@ db = client['Kudziya']
 def pay():
     """Create a paynow object"""
     transaction = paynow.Paynow(
-        "6102", "0da3ebc4-7d51-44c1-b92d-4a938ac4f593", url_for('done'), url_for('pay'))
+        "YOUR-ID", "YOUR-KEY", url_for('done'), url_for('pay'))
 
     if request.method == 'POST':
         ref = request.form['ref']
